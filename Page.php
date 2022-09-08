@@ -15,7 +15,6 @@
 </html>
 
 <?php
-highlight_file(__FILE__);
 if(isset($_POST['name'])){
 	$name=escapeshellcmd($_POST['name']);
 	if(preg_match('/(ph)|(ht)/i',$name)) echo '<script>alert("已报警");</script>';
@@ -28,4 +27,5 @@ if(isset($_POST['name'])){
 		}
 	}
 }
+highlight_file(__FILE__);
 ?>
